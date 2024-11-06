@@ -69,7 +69,7 @@ class PipelineStack(core.Stack):
             partial_build_spec=build_spec,
             commands=[],
             env={
-                "IMAG_TAG": image_tag,
+                "IMAGE_TAG": image_tag,
                 "AWS_ACCOUNT_ID": self.account,
                 "IMAGE_REPO_NAME": ecr_repo.repository_uri     
             }
