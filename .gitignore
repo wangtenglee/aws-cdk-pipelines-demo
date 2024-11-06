@@ -1,0 +1,4 @@
+venv
+pipeline/__pycache__
+cdk.out/assembly-cdk-pipelines-demo-Container-CDK-Pipeline-Lambda-Stage1
+cdk.out

@@ -5,7 +5,6 @@ from aws_cdk import aws_codebuild as _codebuild
 from aws_cdk import aws_iam as _iam
 from aws_cdk import aws_ecr as _ecr
 from aws_cdk import aws_ssm as _ssm
-
 import uuid
 
 from .lambda_stack import LambdaStack
@@ -70,7 +69,7 @@ class PipelineStack(core.Stack):
             partial_build_spec=build_spec,
             commands=[],
             env={
-                "IMAGE_TAG": image_tag,
+                "IMAG_TAG": image_tag,
                 "AWS_ACCOUNT_ID": self.account,
                 "IMAGE_REPO_NAME": ecr_repo.repository_uri     
             }
